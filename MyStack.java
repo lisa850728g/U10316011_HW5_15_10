@@ -24,10 +24,10 @@ class MyStack implements Cloneable{
 		return  list.get(getSize()-1);
 	}
 
-	//拿出陣列中的內容物，儲存在一個變數，最後移除它
+	//拿出陣列中第一個元素的內容物，儲存在一個變數，最後移除它
 	public Object pop(){
-		Object o = list.get(getSize()-1);
-		list.remove(getSize()-1);
+		Object o = list.get(0);
+		list.remove(0);
 		return o;
 	}
 	
